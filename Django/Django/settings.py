@@ -143,6 +143,7 @@ USE_TZ = True
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://frontend-aaa.onrender.com",  # Ваш реальный фронтенд URL
 ]
 
 CORS_ALLOW_CREDENTIALS = True
