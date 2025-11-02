@@ -7,14 +7,6 @@
       "RelativeMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|solutionrelative:Django\\Django\\settings.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\app\\serializers.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|solutionrelative:Django\\app\\serializers.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|solutionrelative:Django\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\app\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|solutionrelative:Django\\app\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -25,6 +17,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\app\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|solutionrelative:Django\\app\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|solutionrelative:Django\\requirements.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\app\\serializers.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|solutionrelative:Django\\app\\serializers.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "requirements.txt",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\requirements.txt",
               "RelativeDocumentMoniker": "Django\\requirements.txt",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "serializers.py",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\app\\serializers.py",
               "RelativeDocumentMoniker": "Django\\app\\serializers.py",
@@ -66,31 +66,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "views.py",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\app\\views.py",
               "RelativeDocumentMoniker": "Django\\app\\views.py",
               "ToolTip": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\app\\views.py",
               "RelativeToolTip": "Django\\app\\views.py",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-10-24T09:47:29.103Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "models.py",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\app\\models.py",
               "RelativeDocumentMoniker": "Django\\app\\models.py",
               "ToolTip": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\app\\models.py",
               "RelativeToolTip": "Django\\app\\models.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-10-24T09:47:26.491Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "urls.py",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\Django\\urls.py",
               "RelativeDocumentMoniker": "Django\\Django\\urls.py",
@@ -108,7 +108,7 @@
               "RelativeDocumentMoniker": "Django\\Django\\settings.py",
               "ToolTip": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\Django\\settings.py",
               "RelativeToolTip": "Django\\Django\\settings.py",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAKQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-10-18T20:30:06.503Z",
               "EditorCaption": ""
