@@ -30,13 +30,14 @@ class Review(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name="Пользователь")
     service = models.ForeignKey(Service, on_delete=models.CASCADE, verbose_name="Услуга")
     rating = models.ForeignKey(Rating, on_delete=models.CASCADE, verbose_name="Оценка")
-    date = models.DateField(verbose_name="Дата отзыва")
+    date = models.DateField(auto_now_add=True, verbose_name="Дата отзыва")
     description = models.TextField(blank=True, null=True, verbose_name="Текст отзыва")
 
     def __str__(self):
         return f"{self.user.username} - {self.service.name} - {self.rating.value}"
 
     class Meta:
+        ordering = ['-date']
         verbose_name = 'Отзыв'
         verbose_name_plural = 'Отзывы'
 
