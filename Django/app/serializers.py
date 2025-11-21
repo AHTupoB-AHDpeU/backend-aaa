@@ -103,12 +103,14 @@ class OrderSerializer(serializers.ModelSerializer):
     user_name = serializers.SerializerMethodField()
     user_email = serializers.CharField(source='user.email', read_only=True)
     user_full_name = serializers.SerializerMethodField()
-    services_names = serializers.SerializerMethodField()
+    services_details = serializers.SerializerMethodField()  # Изменили название
+    status_display = serializers.CharField(source='get_status_display', read_only=True)
 
     class Meta:
         model = Order
-        fields = ('id', 'user', 'user_name', 'user_full_name', 'user_email', 'services', 'services_names', 
-                 'address', 'total_cost', 'created_at', 'status')
+        fields = ('id', 'user', 'user_name', 'user_full_name', 'user_email', 
+                 'services_details', 'address', 'total_cost', 'created_at', 
+                 'status', 'status_display')
 
     def get_user_name(self, obj):
         return obj.user.username
@@ -121,8 +123,15 @@ class OrderSerializer(serializers.ModelSerializer):
         else:
             return obj.user.username
 
-    def get_services_names(self, obj):
-        return [service.name for service in obj.services.all()]
+    def get_services_details(self, obj):
+        """Возвращает детальную информацию об услугах"""
+        services = obj.services.all()
+        return [{
+            'id': service.id,
+            'name': service.name,
+            'price': service.price,
+            'description': service.description
+        } for service in services]
 
 class OrderCreateSerializer(serializers.ModelSerializer):
     services = serializers.ListField(

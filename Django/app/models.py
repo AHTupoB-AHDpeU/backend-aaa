@@ -68,6 +68,10 @@ class Order(models.Model):
         except:
             return f"Заказ #{self.id}"
 
+    def get_status_display_name(self):
+        """Возвращает русское название статуса"""
+        return dict(self.STATUS_CHOICES).get(self.status, self.status)
+
     class Meta:
         verbose_name = 'Заказ'
         verbose_name_plural = 'Заказы'

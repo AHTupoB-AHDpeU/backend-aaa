@@ -96,6 +96,15 @@ def create_order(request):
             return Response(order_serializer.data, status=201)
         return Response(serializer.errors, status=400)
 
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def get_user_orders(request):  # ИМЯ ДОЛЖНО СОВПАДАТЬ
+    """Получить все заказы текущего пользователя"""
+    user = request.user
+    orders = Order.objects.filter(user=user).order_by('-created_at')
+    serializer = OrderSerializer(orders, many=True)
+    return Response(serializer.data)
+
 def home(request):
     """Renders the home page."""
     assert isinstance(request, HttpRequest)
