@@ -111,6 +111,7 @@ class OrderSerializer(serializers.ModelSerializer):
         fields = ('id', 'user', 'user_name', 'user_full_name', 'user_email', 
                  'services_details', 'address', 'total_cost', 'created_at', 
                  'status', 'status_display')
+        read_only_fields = ('user', 'services', 'address', 'total_cost', 'created_at')
 
     def get_user_name(self, obj):
         return obj.user.username

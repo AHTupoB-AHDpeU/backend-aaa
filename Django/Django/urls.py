@@ -27,6 +27,8 @@ urlpatterns = [
     path('api/ratings/', views.ratings_list, name='ratings_list'),
     path('api/orders/create/', views.create_order, name='create_order'),
     path('api/orders/', views.get_user_orders, name='get_user_orders'),
+    path('api/manager/', views.all_orders, name='all_orders'),
+    path('api/orders/<int:order_id>/', views.update_order, name='update_order'),
 ]
 
 if settings.DEBUG:

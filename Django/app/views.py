@@ -98,12 +98,54 @@ def create_order(request):
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
-def get_user_orders(request):  # ИМЯ ДОЛЖНО СОВПАДАТЬ
+def get_user_orders(request):
     """Получить все заказы текущего пользователя"""
     user = request.user
     orders = Order.objects.filter(user=user).order_by('-created_at')
     serializer = OrderSerializer(orders, many=True)
     return Response(serializer.data)
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def all_orders(request):
+    if not request.user.is_staff:
+        return Response(
+            {"detail": "У вас нет прав для просмотра всех заказов."}, 
+            status=status.HTTP_403_FORBIDDEN
+        )
+    
+    orders = Order.objects.all().order_by('-created_at')
+    serializer = OrderSerializer(orders, many=True)
+    return Response(serializer.data)
+
+@api_view(['PATCH'])
+@permission_classes([IsAuthenticated])
+def update_order(request, order_id):
+    try:
+        if not request.user.is_staff:
+            return Response(
+                {"detail": "У вас нет прав для изменения заказов."}, 
+                status=status.HTTP_403_FORBIDDEN
+            )
+        
+        order = Order.objects.get(id=order_id)
+    except Order.DoesNotExist:
+        return Response(
+            {"detail": "Заказ не найден."}, 
+            status=status.HTTP_404_NOT_FOUND
+        )
+    if 'status' not in request.data:
+        return Response(
+            {"detail": "Можно обновлять только статус заказа."}, 
+            status=status.HTTP_400_BAD_REQUEST
+        )
+
+    serializer = OrderSerializer(order, data=request.data, partial=True)
+    if serializer.is_valid():
+        serializer.save()
+        return Response(serializer.data)
+    
+    return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 def home(request):
     """Renders the home page."""
