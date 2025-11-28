@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\Django\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|solutionrelative:Django\\Django\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\Django\\settings.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|solutionrelative:Django\\Django\\settings.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\app\\serializers.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|solutionrelative:Django\\app\\serializers.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\Django\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|solutionrelative:Django\\Django\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B7EEB012-2694-40D8-B5D3-FBBC1E0DCC9C}|Django\\Django.pyproj|C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\app\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,20 +38,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "settings.py",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\Django\\settings.py",
               "RelativeDocumentMoniker": "Django\\Django\\settings.py",
               "ToolTip": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\Django\\settings.py",
               "RelativeToolTip": "Django\\Django\\settings.py",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwIgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-11-22T12:43:55.452Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "serializers.py",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\app\\serializers.py",
               "RelativeDocumentMoniker": "Django\\app\\serializers.py",
@@ -63,7 +63,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "views.py",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\app\\views.py",
               "RelativeDocumentMoniker": "Django\\app\\views.py",
@@ -71,8 +71,7 @@
               "RelativeToolTip": "Django\\app\\views.py",
               "ViewState": "AgIAAH8AAAAAAAAAAAAmwIAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-10-24T09:47:29.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T09:47:29.103Z"
             },
             {
               "$type": "Document",
@@ -88,15 +87,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "urls.py",
               "DocumentMoniker": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\Django\\urls.py",
               "RelativeDocumentMoniker": "Django\\Django\\urls.py",
               "ToolTip": "C:\\Users\\\u0410\u043D\u0434\u0440\u0435\u0439\\source\\repos\\backend\\Django\\Django\\urls.py",
               "RelativeToolTip": "Django\\Django\\urls.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABQAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB4AAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-10-24T09:49:42.19Z"
+              "WhenOpened": "2025-10-24T09:49:42.19Z",
+              "EditorCaption": ""
             }
           ]
         }
